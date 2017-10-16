@@ -1,0 +1,19 @@
+.header {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  font-family: Verdana;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: white;
+  border: 1px solid black;
+}
+
+.header nav span {
+  display: inline-block;
+}
+
+.header p {
+  color: MediumAquamarine;
+}
