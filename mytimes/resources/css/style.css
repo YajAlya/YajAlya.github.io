@@ -7,13 +7,22 @@
   font-size: 14px;
   font-weight: bold;
   background-color: white;
-  border: 1px solid black;
+  border-bottom: 1px solid black;
+  width: 100%;
 }
 
-.header nav span {
+.header img {
+  padding: 10px;
+}
+
+.header a {
   display: inline-block;
+  justify-content: space-around;
+  color: black;
+  padding: 10px;
 }
 
 .header p {
   color: MediumAquamarine;
+  padding-right: 20px;
 }
