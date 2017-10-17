@@ -1,3 +1,5 @@
+/* Header Section */
+
 header {
   display: flex;
   align-items: center;
@@ -40,4 +42,37 @@ a {
   width: 70px;
   height: 60px;
   margin-right: 12px;
+}
+
+/* Main Content Section */
+
+div {
+  border: 1px solid black;
+}
+
+.content {
+  display: flex;
+  width: 1232px;
+  margin: 0 auto 78px auto;
+  padding-top:116px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  margin-right: 32px;
+}
+
+.column.large {
+  width: 630px;
+}
+
+.column.medium {
+  width: 300px;
+  border: 1px solid black;
+}
+
+.column.small {
+  width: 240px;
+  border: 1px solid black;
 }
