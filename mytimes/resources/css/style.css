@@ -76,3 +76,29 @@ div {
   width: 240px;
   border: 1px solid black;
 }
+
+.image-content {
+  font-family: Georgia;
+  display: flex;
+  color: white;
+  font-weight: bold;
+  font-size: 40px;
+  background-image: url('https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-main.png');
+  height: 300px;
+}
+
+.fall-cancelled-image-content {
+ font-size: 30px;
+ font-family: Georgia;
+ display: flex;
+ color: white;
+ font-weight: bold;
+ background-image: url('https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-2.png');
+ height: 300px;
+}
+
+.narrative {
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
+}
