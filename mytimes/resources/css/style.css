@@ -128,7 +128,10 @@ div {
 }
 
 .column.medium .stories {
-  display: flex;
+  flex-direction: column;
+}
+
+.column.small .stories {
   flex-direction: column;
 }
 
@@ -139,4 +142,29 @@ div {
 .story {
   flex-direction: column;
   width: 300px;
+}
+
+
+/* Third Column */
+
+.news-bites h3 {
+  font-size: 16px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 41px;
+}
+
+.news-bites {
+  display: flex;
+  flex-direction: column;
+}
+
+.bite {
+  background-color: WhiteSmoke;
+  font-family: Verdana;
+  font-size: 12px;
+  color: DimGray;
+  margin: 0;
+  border-bottom: 1px solid black;
+  padding: 15px;
 }
