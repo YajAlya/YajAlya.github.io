@@ -102,3 +102,23 @@ div {
   font-size: 17px;
   color: black;
 }
+
+.pop-culture-image-content {
+ font-size: 30px;
+ font-family: Georgia;
+ display: flex;
+ color: white;
+ font-weight: bold;
+ background-image: url('https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-3.png');
+ height: 300px;
+}
+
+.cat-ceo-image-content {
+ font-size: 30px;
+ font-family: Georgia;
+ display: flex;
+ color: white;
+ font-weight: bold;
+ background-image: url('https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-1.png');
+ height: 300px;
+}
