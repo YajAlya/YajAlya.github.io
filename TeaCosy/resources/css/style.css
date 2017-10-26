@@ -13,6 +13,8 @@ body {
   flex-wrap: wrap;
 }
 
+/* Header Section */
+
 header {
   height: 69px;
   border-bottom: 1px solid seashell;
@@ -40,3 +42,40 @@ header img {
   padding-left: 10px;
   height: 50px;
 }
+
+/* Our Mission Section */
+
+.Body {
+  padding-top: 69px;
+  opacity: 0.9;
+  width: 1200px;
+  margin: auto;
+}
+
+#mission {
+  padding-top: 70px;
+  height: 700px;
+  background-image: url('https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg');
+}
+
+.overlay {
+  margin: auto;
+  background-color: black;
+  width: 100%;
+}
+
+/* Tea of the Month Section */
+
+#feature {
+  width: 1000px;
+}
+
+.pics img {
+  height: 200px;
+  width: 300px;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+
+/* Locations Section */
