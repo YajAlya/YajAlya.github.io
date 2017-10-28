@@ -80,11 +80,15 @@ header img {
   justify-content: space-between;
   padding: 5px;
   margin: 10px;
+  display: block;
 }
 
-.pics {
-
+.pics div h4 {
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
+
+
 
 
 /* Locations Section */
