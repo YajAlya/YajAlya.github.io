@@ -22,6 +22,7 @@ header {
   z-index: 1;
   width: 100%;
   align-items: center;
+  background-color: black;
 }
 
 a {
@@ -68,6 +69,9 @@ header img {
 
 #feature {
   width: 1000px;
+  margin: auto;
+  padding-top: 70px;
+  height: 700px;
 }
 
 .pics img {
@@ -75,6 +79,11 @@ header img {
   width: 300px;
   justify-content: space-between;
   padding: 5px;
+  margin: 10px;
+}
+
+.pics {
+
 }
 
 
