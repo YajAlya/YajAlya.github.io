@@ -88,26 +88,28 @@ header img {
   margin-bottom: 0px;
 }
 
-#locations {
+.overlocs {
+    justify-content: center;
+    align-items: baseline;
+}
+
+.location {
+  margin-top: 20px;
   padding-top: 70px;
   height: 500px;
   background-image: url('https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg');
 }
 
-.overlocs div {
-  display: inline-block;
-}
-
 .locs {
-  opacity: 1;
-  padding: 10px;
-  margin: 5px 20px;
+  display: inline-block;
   background-color: black;
-  flex-basis: 280px;
-  width: 300px;
-  display: flex;
-  flex-direction: column;
-  justify content: center;
+  opacity: 1;
+  width: 260px;
+  height: 260px;
+  margin: 15px 20px;
+  padding: 10px;
+
+
 }
 
 
