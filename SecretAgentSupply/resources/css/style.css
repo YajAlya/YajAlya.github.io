@@ -1,0 +1,30 @@
+html {
+  font-size: 18px;
+  font-family: Helvetica;
+  background-color: black;
+  color: white;
+}
+
+/* Desktop View */
+
+.logo img {
+  height: 1.5rem;
+  margin-left: 0.5rem;
+  margin-right: 1rem;
+}
+
+.logo span {
+  font-size: 1rem;
+  margin-top: 0.66rem;
+  margin-bottom: 0.66rem;
+}
+
+.banner {
+  background-image: url('https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/moto.jpeg');
+  height: 25rem;
+}
+
+.box {
+  background-color: black;
+  width: 20rem;
+}
