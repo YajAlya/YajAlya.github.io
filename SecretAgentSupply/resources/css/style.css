@@ -1,7 +1,6 @@
 html {
   font-size: 18px;
   font-family: Helvetica;
-  background-color: black;
   color: white;
 }
 
@@ -10,9 +9,17 @@ html {
   margin: 0 auto;
 }
 
+.body {
+
+}
+
 /* Desktop View */
 
 /*Logo */
+
+.logo {
+  background-color: black;
+}
 
 .logo .container {
   display: flex;
@@ -72,4 +79,125 @@ nav ul {
   justify-content: space-between;
   padding: 0.75rem 0;
   list-style: none;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+
+/* Products */
+
+.products, .business-info {
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem 0 0 0 ;
+}
+
+.product {
+  width: 30%;
+}
+
+.product-image {
+  border: 4px solid black;
+  padding: 2rem 0;
+  height: 9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-image img {
+  max-width: 8rem;
+}
+
+img {
+  border-style: none;
+}
+
+.description {
+  display: block;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+
+/* Info Section */
+
+.info {
+  width: 35%;
+}
+
+.info span {
+  color: black;
+  padding-top: 0.25rem;
+}
+
+.info .title {
+  display: block;
+  background-color: black;
+  color: white;
+  padding: 1rem 2rem;
+}
+
+/* Footer */
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 5rem 0;
+  margin-top: 4em;
+}
+
+@media only screen and (max-width: 1024px) {
+
+  body {
+    font-size: 16px;
+  }
+
+  .product {
+    width: 47%;
+  }
+
+  .glasses {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: block;
+  }
+
+  .non {
+    display: none;
+  }
+
+  .info {
+    width: 35%;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+
+  .product {
+    width: 90%;
+  }
+
+  .watch {
+    display: none;
+  }
+
+  .info {
+    width: 90%;
+    margin: 0.5rem 0 0 0 ;
+  }
+
+  .products, .business-info {
+    display: block;
+  }
+
+  footer {
+    text-align: center;
+  }
 }
