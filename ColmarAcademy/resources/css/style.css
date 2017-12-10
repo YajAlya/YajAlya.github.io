@@ -1,35 +1,692 @@
-body {
+/* Main Styles */
+
+html {
+  font-family: 'Roboto', Arial, sans-serif;
   font-size: 16px;
+  line-height: 1.15;
 }
 
+a {
+  background-color: transparent;
+}
 
-.logo {
-  margin-left: 1.5rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+/* Header */
+
+header {
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  height: 4rem;
+  width: 100%;
   display: flex;
+  align-items: center;
+  background-color: white;
 }
 
-.logo span {
-  line-height: 2rem;
+#logo {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  margin-left: 24px;
+  margin-right: 8px;
+}
+
+#colmar {
+  font-weight: bold;
+  color: rgb(64, 64, 64);
+}
+
+header span {
+  font-size: 1.33rem;
+  color: rgb(52,89,97);
+}
+
+.desktop a {
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0.5rem;
+  color: rgb(64, 64, 64);
+}
+
+.desktop a:hover {
+  background-color: black;
+  color: white;
+}
+
+.mobile {
+  display: none;
 }
 
 .container {
-  height: 64px;
+  width: 100%;
+  background-color: rgb(116, 160, 192);
+  position: relative;
+  z-index: 15;
+  top: 4rem;
   display: flex;
-
 }
 
-nav {
-  text-align: right;
-  flex-grow: 1;
-  margin-right: 1.5rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+.learncontent {
+  display: flex;
+  padding: 32px 24px;
 }
 
-nav span {
+.imaging {
+  display: flex;
+  width: 60%;
+  margin-right: 40px;
+}
+
+.imagebox img {
+  max-width: 100%;
+  height: auto;
+}
+
+.mobilelearnbox {
+  display: none;
+}
+
+.learnbox {
+  color: rgb(16, 16, 16);
+  margin-top: 3rem;
+  line-height: 1.3;
+  width: 22rem;
+  display: block;
+}
+
+.learnbox h1 {
+  font-weight: bold;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  width: 90%;
+}
+
+.learnbox p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  width: 90%;
+}
+
+.learnbox span {
+  background-color: rgb(108, 107, 115);
+  padding: 8px 0px;
+  display: flex;
+  justify-content: center;
+  width: 85%;
+  transition: 100ms ease-out 200ms;
+}
+
+.learnbox span:hover {
+  background-color: rgb(65, 95, 140);
+  height: 30px;
+}
+
+.learnbox span a {
+  color: white;
+  font-weight: 300;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.subjecttext span, p {
+  font-weight: 300;
+}
+
+.startbutton {
+  display: flex;
+  justify-content: flex-start;
+}
+
+
+
+/* Practice */
+
+.practicecontainer {
+  width: 100%;
+  position: relative;
+  top: 4rem;
+  z-index: 10;
+  background-color: rgb(146, 153, 190);
+  display: flex;
+}
+
+.practicecontent {
+  padding: 32px 0px 32px 24px;
+  display: flex;
+  color: rgb(16, 16, 16);
+}
+
+/* Left Box */
+
+.leftbox {
+  margin-right: 24px;
+}
+
+.leftbox h1 {
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 24px;
+}
+
+.leftbox p {
+  font-weight: 100;
+  margin-bottom: 32px;
+}
+
+.leftbox span {
+  font-weight: 300;
+  font-size: 0.75rem;
+}
+
+.emanuel {
+  margin-bottom: 2rem;
+}
+
+.emanuel img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Right Box */
+
+.rightbox {
+  width: 423px;
+  display: flex;
+  flex-direction: column;
+}
+
+.infobox {
+  width: 423px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: center;
+}
+
+.desktopic {
+  width: 35%;
+}
+
+.desktopic img {
+  max-width: 100%;
+  height: auto;
+  margin: 1rem;
+  border: 1px solid rgb(220, 220, 220);
+}
+
+.mobilepic {
+  display: none;
+}
+
+.textbox {
+  color: rgb(16, 16, 16);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin: 2.5rem 1.5rem 3rem 2rem;
+}
+
+.textbox h2 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  letter-spacing: .4px;
+}
+
+.textbox span {
+  font-size: 0.8rem;
+  font-weight: 300;
+  margin-bottom: 1.2rem;
+}
+
+.textbox a {
+  color: rgb(108, 107, 115);
+  font-weight: 400;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.textbox a:hover {
+  color: rgb(142, 213, 202);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+#oliver {
+  background-color: rgb(65, 95, 140);
+}
+
+#olivertext {
+  margin: 0px;
+  line-height: 2;
+}
+
+#special {
+  display: none;
+}
+
+/* Learning */
+
+.learningcontainer {
+  position: relative;
+  z-index: 10;
+  top: 4rem;
+  background-color: rgb(87, 103, 142);
+  padding-bottom: 1.5rem;
+}
+
+.learningcontainer h1 {
+  color: rgb(16, 16, 16);
+  font-size: 2rem;
+  font-weight: 500;
+  padding: 2rem 0 1.5rem 0;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+}
+
+.learningbox {
+  color: rgb(64, 64, 64);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 1.5rem;
+  line-height: 1.15;
+}
+
+.subjects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.subjectbox {
+  height: 276px;
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem 1rem;
+  background-color: white;
+}
+
+.subjectpic {
+  margin: 0;
+  padding: 0;
+}
+
+.subjectpic img {
+  max-width: 100%;
+  height: auto;
+}
+
+.subjecttext {
+  margin: 0;
+  padding: 0;
+}
+
+.subjecttext h2 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 0.9rem 0rem 0.5rem 1rem;
+  padding: 0;
+}
+
+.subjecttext p {
+  margin: 0 0 1.5rem 1rem;
+}
+
+.subjecttext span, p {
+  font-weight: 300;
+}
+
+.subjecttext span {
   display: inline-block;
-  padding-left: .5rem;
-  padding-right: .5rem;
+  margin: 0 0 0.5rem 1rem;
+  color: rgb(52, 89, 97);
+  font-size: 0.85rem;
+}
+
+/* Thesis Exhibit */
+
+#title {
+  color: rgb(16, 16, 16);
+  font-size: 2rem;
+  font-weight: 500;
+  padding: 2rem 0 1rem 0;
+  width: 100%;
+  text-align: center;
+}
+
+#thesis.learningcontainer {
+  background-color: rgb(85, 108, 141);
+  padding-bottom: 0;
+}
+
+#thesis.practicecontent {
+  padding-top: 0rem;
+}
+
+.practicecontent {
+  padding: 32px 0px 32px 24px;
+  display: flex;
+  color: rgb(16, 16, 16);
+}
+
+#thesis.leftbox {
+  margin-right: 1rem;
+}
+
+#thesis.leftbox h1 {
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  text-align: left;
+  padding: 0;
+}
+
+#thesis.leftbox p {
+  margin-bottom: 0;
+}
+
+.leftbox p {
+  font-weight: 100;
+}
+
+.video {
+  margin-bottom: 1.5rem;
+}
+
+#fisma.infobox {
+  width: 423px;
+  height: auto;
+}
+
+/* Footer */
+
+footer {
+  position: relative;
+  z-index: 5;
+  top: 4rem;
+  background-color: white;
+  height: 3rem;
+  max-width: 100%;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+
+footer span {
+  flex-grow: 1;
+}
+
+footer nav a {
+  padding: 0 0.5rem;
+  text-decoration: none;
+  color: rgb(64, 64, 64);
+}
+
+
+/* Tablet Screen */
+
+@media only screen and (max-width: 1079px) {
+
+  #logo {
+    display: none;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+  }
+
+  .learnbox {
+    margin-top: 0.5rem;
+  }
+
+  .learnbox h1 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+  }
+
+  .learnbox p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+}
+
+/* Mobile Screen */
+
+@media only screen and (max-width: 600px) {
+
+  header {
+    width: 100%
+  }
+
+  .learncontent {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .imaging {
+    display: none;
+  }
+
+  .imagebox {
+    display: none;
+  }
+
+  .mobilelearnbox {
+    display: flex;
+    padding: 1rem;
+    margin: 0.5rem;
+    max-width: 100%;
+    height: 9.25rem;
+  }
+
+  .mobilelearnbox img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .learnbox {
+    color: rgb(64, 64, 64);
+    line-height: 1.4;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .learnbox h1 {
+    font-weight: bold;
+    margin: 2rem 1rem;
+    font-size: 2rem;
+    width: auto;
+  }
+
+  .learnbox p {
+    margin: 0 1rem 1.5rem 1rem;
+    font-size: 1.2rem;
+    width: auto;
+  }
+
+  .learnbox span {
+    background-color: rgb(128, 128, 128);
+    padding: 8px 0px;
+    margin: 0 1rem 2rem 1rem;
+    width: 100%;
+  }
+
+  .learnbox span a {
+    color: white;
+    font-weight: 400;
+    font-size: 1rem;
+  }
+
+  .startbutton {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .practicecontainer {
+    padding: 0rem;
+    margin: 0rem;
+  }
+
+  .practicecontent {
+    margin: 1rem;
+    padding: 0rem;
+  }
+
+  .leftbox {
+    display: none;
+  }
+
+  #thesis.leftbox h1, p {
+    display: none;
+  }
+
+  .subjecttext span, p {
+    display: none;
+  }
+
+  .rightbox {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .infobox {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .desktopic {
+    display: none;
+  }
+
+  .mobilepic {
+    display: block;
+    padding: 0rem;
+    width: 100%;
+  }
+
+  .mobilepic img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .textbox {
+    margin: 1rem 0 1rem 1rem;
+    padding: 0rem;
+  }
+
+  .textbox h2 {
+    margin: 0;
+    margin-bottom: 0.5rem;
+    padding: 0;
+  }
+
+  .textbox span {
+    font-weight: 300;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .textbox a {
+    font-size: 0.9rem;
+    margin-bottom: 0rem;
+  }
+
+  #oliver {
+    background-color: rgb(146, 153, 190);
+  }
+
+  .learningcontainer {
+    padding-bottom: 1rem;
+  }
+
+  .learningcontainer h1 {
+    padding: 2rem 0 1rem 0;
+  }
+
+  .subjectbox {
+    height: 3.2rem;
+    width: 90%;
+    margin: 0.5rem;
+    padding: 0;
+    background-color: rgb(116, 160, 192);
+  }
+
+  .subjectpic img {
+    display: none;
+  }
+
+  .subjecttext h2 {
+    align-items: center;
+  }
+
+  .subjecttext span, p {
+    display: none;
+  }
+
+  #thesis.learningcontainer {
+    background-color: rgb(85, 108, 141);
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  #title {
+    padding: 2rem 0;
+    margin: 0;
+    font-weight: 600;
+  }
+
+  #thesis.practicecontent {
+    max-width: 100%;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  #thesis.leftbox {
+    display: block;
+    padding: 0;
+    margin: 0;
+  }
+
+  .video {
+    max-width: 100%;
+    height: auto;
+    padding-bottom: 1.5rem;
+    margin: 0;
+  }
+
+  #thesis.leftbox p {
+    margin-bottom: 0;
+  }
+
+  #fisma.rightbox {
+    display: none;
+  }
+
+  footer {
+    padding: 1rem;
+    height: auto;
+    font-size: 0.75rem;
+  }
 }
